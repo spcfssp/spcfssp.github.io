@@ -24,11 +24,7 @@ em {
 
 .jumbotron {
   background-color: white;
-  margin: 0px;
-}
-
-.jumbotron h1 {
-  font-size: 48px;
+  margin: 0 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -56,7 +52,7 @@ em {
 }
 
 .details {
-  margin: 40px 0;
+  margin: 0 0;
 }
 .details p + h4 {
   margin-top: 28px;
@@ -84,11 +80,14 @@ em {
     margin: 0;
     border-bottom: 0;
   }
+  .jumbotron h1 {
+    font-size: 48px;
+  }
 }
 
 h1 {
   text-align: center;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1em;
   padding-bottom: .5em;
 }
