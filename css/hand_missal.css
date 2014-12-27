@@ -1,13 +1,34 @@
+@font-face {
+  font-family: 'Sorts Mill Goudy';
+
+  src: url('../fonts/GoudyStM-webfont.eot');
+  src: url('../fonts/GoudyStM-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/GoudyStM-webfont.woff') format('woff'), url('../fonts/GoudyStM-webfont.ttf') format('truetype'), url('../fonts/GoudyStM-webfont.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Sorts Mill Goudy Italic';
+
+  src: url('../fonts/GoudyStM-Italic-webfont.eot');
+  src: url('../fonts/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/GoudyStM-Italic-webfont.woff') format('woff'), url('../fonts/GoudyStM-Italic-webfont.ttf') format('truetype'), url('../fonts/GoudyStM-Italic-webfont.svg#glyphicons_halflingsregular') format('svg');
+}
+
 body {
-  font-family: Goudy Old Style, Goudy, Hoefler Text, Georgia, serif;
+  font-family: Sorts Mill Goudy, Goudy Old Style, Goudy, Georgia, serif;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+em {
+  font-family: Sorts Mill Goudy Italic;
+}
+
 .jumbotron {
-  /*padding: 0;*/
   background-color: white;
   margin: 0px;
+}
+
+.jumbotron h1 {
+  font-size: 48px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -22,7 +43,6 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  /*border-top: 1px solid #e5e5e5;*/
 }
 
 /* Customize container */
