@@ -1,24 +1,71 @@
 body {
   font-family: Goudy Old Style, Goudy, Hoefler Text, Georgia, serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-body {
-  /* IE */
 
-  font-size: 100%;
+.jumbotron {
+  /*padding: 0;*/
+  background-color: white;
+  margin: 0px;
 }
-html > body {
-  /* Other browsers */
 
-  font-size: 16px;
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.details,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Goudy Old Style, Goudy, Hoefler Text, Georgia, serif;
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  /*border-top: 1px solid #e5e5e5;*/
 }
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.details {
+  margin: 40px 0;
+}
+.details p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .details,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .container .jumbotron {
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0;
+    border-bottom: 0;
+  }
+}
+
 h1 {
   text-align: center;
   font-weight: bold;
@@ -53,12 +100,17 @@ div.nav h4 {
   padding: 0;
   text-align: justify;
 }
+ul {
+  padding: 0px;
+}
 ul li:before {
-  content: "+ ";
+  margin: 0 0.5em 0 -0.5em;
+  content: "+";
 }
 ul li {
   list-style-type: none;
-  text-indent: -1.2em;
+  margin: 0 0.5em 0 1em;
+  /*text-indent: -1.2em;*/
 }
 dl {
   margin: 0 0 1.5em 0;
@@ -83,11 +135,11 @@ hr {
   padding: 0;
   margin: 0;
 }
-p.start:first-letter {
+p.lead:first-letter {
   float: left;
   color: #202020;
   font-size: 3em;
-  line-height: 1em;
+  line-height: .9em;
 }
 .sc {
   font-variant: small-caps;
